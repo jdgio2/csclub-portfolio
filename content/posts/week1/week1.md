@@ -4,13 +4,13 @@ date = 2025-03-12T06:40:21+00:00
 draft = false
 +++
 
-### Objective
+## Objective
 
 -   Set up your project using Vite and React.
 -   Create your very first components (Header, About, Skills, Projects, Footer) for the portfolio
 -   Add some basic info about yourself
 
-### Steps
+## Steps
 
 1. **Install Prerequisites**
     - Ensure Node.js is installed on your computer.
@@ -38,15 +38,21 @@ export default function App() {
 ```
 
 -   This is how you'll end up creating every component from now on: `export default function {ComponentName}`.
-    {{< details title="⬅️ Click the triangle for more info on `App.jsx` this code does">}}
+
+    {{< details title="⬅️ Click the triangle for more info `App.jsx`">}}
     This code above is called a _component_. It looks just like a function, but it actually is a powerful way to create reusable pieces of UI in React. Components let you break your interface into independent, manageable parts that can maintain their own state and be easily composed together.
 
 The `App` component is particular is something you'll see in every React app, and serves as the root component for the entire app!
 
 What you're returning in this component looks _a lot_ like HTML, but is actually a different language called "jsx", which essentially just tells JavaScript to insert an `h1` element into `index.html`.
-{{< /details >}} 3. Save `App.jsx` and go check out your demo to see your changes. You should see something like this:
-![Hello World example image](../helloworld.png) 4. Inside the `src` folder, create a new file called `Header.jsx`.  
- 5. Add the following code to `Header.jsx`:
+{{< /details >}}
+
+3. Save `App.jsx` and go check out your demo to see your changes. You should see something like this:
+   ![Hello World example image](../helloworld.png)
+
+4. Inside the `src` folder, create a new file called `Header.jsx`.
+
+5. Add the following code to `Header.jsx`:
 
 ```jsx
 export default function Header() {
@@ -59,7 +65,9 @@ export default function Header() {
 ```
 
 -   This defines a **new component** called `Header`.
--   It follows the same structure as `App.jsx`, using `export default` so it can be imported elsewhere. 6. Now, import and use Header inside `App.jsx`:
+-   It follows the same structure as `App.jsx`, using `export default` so it can be imported elsewhere.
+
+6. Import and use Header inside `App.jsx`:
 
 ```jsx
 import Header from "./Header"; // This is how we import components
@@ -74,30 +82,54 @@ export default function App() {
 }
 ```
 
--   You can use Header any number of times in your code. Try copy and pasting `<Header />` a few times and saving `App.jsx` to see what happens. 7. You should now see something like this:
-    ![Page with basic header component](../headerdone.png)
+-   You can use Header any number of times in your code. Try copy and pasting `<Header />` a few times and saving `App.jsx` to see what happens.
 
-### Practice Challenge
+7. You should see something like this:
+   ![Page with basic header component](../headerdone.png)
 
--   [ ] Create a new components for your About, Skills, Projects, and Footer sections.
--   [ ] Import your new components into your `App.jsx`
+## Practice Challenge
+
+-   [ ] **Create new components for your About, Skills, Projects, and Footer sections.**
+
+    -   **Hero Section**
+        -   Includes a headline, a brief description, and a call-to-action button (like "Contact Me" or "View My Work").
+        -   Example input: "Hi, I’m [Your Name], a full-stack developer. I build web apps that solve real problems. Let's work together!"
+    -   **About Section:**
+        -   Includes an image (e.g., a personal photo or avatar) and three sentences about yourself.
+        -   Example input: "Hi, I'm [Your Name], a passionate developer from [Location]. I specialize in React and love tackling challenging problems. In my free time, you’ll find me hiking or working on side projects."
+    -   **Skills Section:**
+        -   List of technologies or languages you're proficient in (e.g., JavaScript, React, Python).
+        -   Example input: A list of skills with accompanying icons or progress bars.
+        -   You could create a list or use icons from a library like Font Awesome for each skill.
+    -   **Projects Section:**
+        -   Showcase a few personal or school projects you've worked on.
+        -   Example input: "Project 1: To-Do List App - A simple task manager built with React and Redux. Project 2: Portfolio Website - A personal portfolio built using React and Tailwind CSS."
+        -   Each project can have a title, description, and link to the live project or GitHub repository.
+    -   **Footer Section:**
+        -   Contains contact info, links to your social media profiles, or a copyright notice.
+        -   Example input: "Connect with me: [LinkedIn link], [GitHub link], [Email link]." You can also include a copyright message like "© 2025 [Your Name]."
+
+-   [ ] **Import your new components into your `App.jsx`.**
+
+If you've done all the challenges, it might look like this:
+![All challenges done](../challengesdone.png)
 
 # Additional Content: Vite Project Structure Overview
 
 Below is an explanation of each file and directory in a base Vite + React project:
 
-## 📂 `node_modules/`
+### 📂 `node_modules/`
 
 This folder contains all the dependencies installed via npm. You generally don’t need to manually edit anything inside this folder. It is automatically generated when you run `npm install`.
 
-## 📂 `public/`
+### 📂 `public/`
 
 The `public` folder is where static assets (like images, icons, or fonts) are placed. These files won’t be processed by Vite and can be referenced directly in your HTML.
 
 -   📄 `vite.svg`  
     A sample SVG file included with Vite’s default template.
 
-## 📂 `src/`
+### 📂 `src/`
 
 This is where the main application code lives.
 
@@ -118,31 +150,31 @@ This is where the main application code lives.
 -   📄 `main.jsx`  
     The file where the React app is initialized and rendered into the DOM.
 
-## 🔹 `.gitignore`
+### 🔹 `.gitignore`
 
 Specifies files and folders that Git should ignore, such as `node_modules` and build files.
 
-## 📄 `eslint.config.js`
+### 📄 `eslint.config.js`
 
 Configuration file for ESLint, which helps maintain code quality by enforcing coding standards.
 
-## 📄 `index.html`
+### 📄 `index.html`
 
 The main HTML file that Vite serves. It includes a root `<div>` where the React app is injected.
 
-## 📄 `package-lock.json`
+### 📄 `package-lock.json`
 
 Automatically generated file that locks the versions of dependencies for consistency across installations.
 
-## 📄 `package.json`
+### 📄 `package.json`
 
 Defines project metadata, dependencies, scripts, and configurations.
 
-## 📄 `README.md`
+### 📄 `README.md`
 
 A markdown file explaining the project, how to set it up, and how to use it.
 
-## 📄 `vite.config.js`
+### 📄 `vite.config.js`
 
 Configuration file for Vite, allowing customization of the development server and build process.
 

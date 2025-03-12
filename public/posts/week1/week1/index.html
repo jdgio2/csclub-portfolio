@@ -70,12 +70,8 @@ export default function App() {
     return &lt;h1&gt;Hello world!&lt;/h1&gt;;
 }
 
-This is how you&rsquo;ll end up creating every component from now on: export default function {ComponentName}.
 
-    ⬅️ Click the triangle for more info on App.jsx this code does
-    This code above is called a _component_. It looks just like a function, but it actually is a powerful way to create reusable pieces of UI in React. Components let you break your interface into independent, manageable parts that can maintain their own state and be easily composed together.
-
-The App component is particular is something you&rsquo;ll see in every React app, and serves as the root component for the entire app!" />
+This is how you&rsquo;ll end up creating every component from now on: export default function {ComponentName}." />
   <meta name="author" content="CS Club Portfolio" /><link rel="preload stylesheet" as="style" href="http://localhost:1313/main.min.css" />
 
   
@@ -181,13 +177,13 @@ The App component is particular is something you&rsquo;ll see in every React app
   <header class="mb-14">
     <h1 class="my-0! pb-2.5">Week 1 - Environment Setup &amp; Basic React Component</h1><div class="text-xs antialiased opacity-60"><time>Mar 12, 2025</time></div></header>
 
-  <section><h3 id="objective">Objective</h3>
+  <section><h2 id="objective">Objective</h2>
 <ul>
 <li>Set up your project using Vite and React.</li>
 <li>Create your very first components (Header, About, Skills, Projects, Footer) for the portfolio</li>
 <li>Add some basic info about yourself</li>
 </ul>
-<h3 id="steps">Steps</h3>
+<h2 id="steps">Steps</h2>
 <ol>
 <li><strong>Install Prerequisites</strong>
 <ul>
@@ -226,20 +222,30 @@ The App component is particular is something you&rsquo;ll see in every React app
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> &lt;<span style="color:#f92672">h1</span>&gt;<span style="color:#a6e22e">Hello</span> <span style="color:#a6e22e">world</span><span style="color:#f92672">!</span>&lt;/<span style="color:#f92672">h1</span>&gt;;
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><ul>
-<li>This is how you&rsquo;ll end up creating every component from now on: <code>export default function {ComponentName}</code>.
+<li>
+<p>This is how you&rsquo;ll end up creating every component from now on: <code>export default function {ComponentName}</code>.</p>
 <details>
-    <summary>⬅️ Click the triangle for more info on <code>App.jsx</code> this code does</summary>
+    <summary>⬅️ Click the triangle for more info <code>App.jsx</code></summary>
     <pre><code>This code above is called a _component_. It looks just like a function, but it actually is a powerful way to create reusable pieces of UI in React. Components let you break your interface into independent, manageable parts that can maintain their own state and be easily composed together.
 </code></pre>
 <p>The <code>App</code> component is particular is something you&rsquo;ll see in every React app, and serves as the root component for the entire app!</p>
 <p>What you&rsquo;re returning in this component looks <em>a lot</em> like HTML, but is actually a different language called &ldquo;jsx&rdquo;, which essentially just tells JavaScript to insert an <code>h1</code> element into <code>index.html</code>.</p>
 
 </details>
- 3. Save <code>App.jsx</code> and go check out your demo to see your changes. You should see something like this:
-<img src="../helloworld.png" alt="Hello World example image"> 4. Inside the <code>src</code> folder, create a new file called <code>Header.jsx</code>.</li>
+
+</li>
 </ul>
-<ol start="5">
-<li>Add the following code to <code>Header.jsx</code>:</li>
+<ol start="3">
+<li>
+<p>Save <code>App.jsx</code> and go check out your demo to see your changes. You should see something like this:
+<img src="../helloworld.png" alt="Hello World example image"></p>
+</li>
+<li>
+<p>Inside the <code>src</code> folder, create a new file called <code>Header.jsx</code>.</p>
+</li>
+<li>
+<p>Add the following code to <code>Header.jsx</code>:</p>
+</li>
 </ol>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-jsx" data-lang="jsx"><span style="display:flex;"><span><span style="color:#66d9ef">export</span> <span style="color:#66d9ef">default</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">Header</span>() {
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> (
@@ -250,8 +256,11 @@ The App component is particular is something you&rsquo;ll see in every React app
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><ul>
 <li>This defines a <strong>new component</strong> called <code>Header</code>.</li>
-<li>It follows the same structure as <code>App.jsx</code>, using <code>export default</code> so it can be imported elsewhere. 6. Now, import and use Header inside <code>App.jsx</code>:</li>
+<li>It follows the same structure as <code>App.jsx</code>, using <code>export default</code> so it can be imported elsewhere.</li>
 </ul>
+<ol start="6">
+<li>Import and use Header inside <code>App.jsx</code>:</li>
+</ol>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-jsx" data-lang="jsx"><span style="display:flex;"><span><span style="color:#66d9ef">import</span> <span style="color:#a6e22e">Header</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#34;./Header&#34;</span>; <span style="color:#75715e">// This is how we import components
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">export</span> <span style="color:#66d9ef">default</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">App</span>() {
@@ -263,25 +272,68 @@ The App component is particular is something you&rsquo;ll see in every React app
 </span></span><span style="display:flex;"><span>    );
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><ul>
-<li>You can use Header any number of times in your code. Try copy and pasting <code>&lt;Header /&gt;</code> a few times and saving <code>App.jsx</code> to see what happens. 7. You should now see something like this:
+<li>You can use Header any number of times in your code. Try copy and pasting <code>&lt;Header /&gt;</code> a few times and saving <code>App.jsx</code> to see what happens.</li>
+</ul>
+<ol start="7">
+<li>You should see something like this:
 <img src="../headerdone.png" alt="Page with basic header component"></li>
-</ul>
-<h3 id="practice-challenge">Practice Challenge</h3>
+</ol>
+<h2 id="practice-challenge">Practice Challenge</h2>
 <ul>
-<li><input disabled="" type="checkbox"> Create a new components for your About, Skills, Projects, and Footer sections.</li>
-<li><input disabled="" type="checkbox"> Import your new components into your <code>App.jsx</code></li>
+<li>
+<p><input disabled="" type="checkbox"> <strong>Create new components for your About, Skills, Projects, and Footer sections.</strong></p>
+<ul>
+<li><strong>Hero Section</strong>
+<ul>
+<li>Includes a headline, a brief description, and a call-to-action button (like &ldquo;Contact Me&rdquo; or &ldquo;View My Work&rdquo;).</li>
+<li>Example input: &ldquo;Hi, I’m [Your Name], a full-stack developer. I build web apps that solve real problems. Let&rsquo;s work together!&rdquo;</li>
 </ul>
+</li>
+<li><strong>About Section:</strong>
+<ul>
+<li>Includes an image (e.g., a personal photo or avatar) and three sentences about yourself.</li>
+<li>Example input: &ldquo;Hi, I&rsquo;m [Your Name], a passionate developer from [Location]. I specialize in React and love tackling challenging problems. In my free time, you’ll find me hiking or working on side projects.&rdquo;</li>
+</ul>
+</li>
+<li><strong>Skills Section:</strong>
+<ul>
+<li>List of technologies or languages you&rsquo;re proficient in (e.g., JavaScript, React, Python).</li>
+<li>Example input: A list of skills with accompanying icons or progress bars.</li>
+<li>You could create a list or use icons from a library like Font Awesome for each skill.</li>
+</ul>
+</li>
+<li><strong>Projects Section:</strong>
+<ul>
+<li>Showcase a few personal or school projects you&rsquo;ve worked on.</li>
+<li>Example input: &ldquo;Project 1: To-Do List App - A simple task manager built with React and Redux. Project 2: Portfolio Website - A personal portfolio built using React and Tailwind CSS.&rdquo;</li>
+<li>Each project can have a title, description, and link to the live project or GitHub repository.</li>
+</ul>
+</li>
+<li><strong>Footer Section:</strong>
+<ul>
+<li>Contains contact info, links to your social media profiles, or a copyright notice.</li>
+<li>Example input: &ldquo;Connect with me: [LinkedIn link], [GitHub link], [Email link].&rdquo; You can also include a copyright message like &ldquo;© 2025 [Your Name].&rdquo;</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><input disabled="" type="checkbox"> <strong>Import your new components into your <code>App.jsx</code>.</strong></p>
+</li>
+</ul>
+<p>If you&rsquo;ve done all the challenges, it might look like this:
+<img src="../challengesdone.png" alt="All challenges done"></p>
 <h1 id="additional-content-vite-project-structure-overview">Additional Content: Vite Project Structure Overview</h1>
 <p>Below is an explanation of each file and directory in a base Vite + React project:</p>
-<h2 id="-node_modules">📂 <code>node_modules/</code></h2>
+<h3 id="-node_modules">📂 <code>node_modules/</code></h3>
 <p>This folder contains all the dependencies installed via npm. You generally don’t need to manually edit anything inside this folder. It is automatically generated when you run <code>npm install</code>.</p>
-<h2 id="-public">📂 <code>public/</code></h2>
+<h3 id="-public">📂 <code>public/</code></h3>
 <p>The <code>public</code> folder is where static assets (like images, icons, or fonts) are placed. These files won’t be processed by Vite and can be referenced directly in your HTML.</p>
 <ul>
 <li>📄 <code>vite.svg</code><br>
 A sample SVG file included with Vite’s default template.</li>
 </ul>
-<h2 id="-src">📂 <code>src/</code></h2>
+<h3 id="-src">📂 <code>src/</code></h3>
 <p>This is where the main application code lives.</p>
 <ul>
 <li>
@@ -308,19 +360,19 @@ Global CSS styles that apply to the whole app.</p>
 The file where the React app is initialized and rendered into the DOM.</p>
 </li>
 </ul>
-<h2 id="-gitignore">🔹 <code>.gitignore</code></h2>
+<h3 id="-gitignore">🔹 <code>.gitignore</code></h3>
 <p>Specifies files and folders that Git should ignore, such as <code>node_modules</code> and build files.</p>
-<h2 id="-eslintconfigjs">📄 <code>eslint.config.js</code></h2>
+<h3 id="-eslintconfigjs">📄 <code>eslint.config.js</code></h3>
 <p>Configuration file for ESLint, which helps maintain code quality by enforcing coding standards.</p>
-<h2 id="-indexhtml">📄 <code>index.html</code></h2>
+<h3 id="-indexhtml">📄 <code>index.html</code></h3>
 <p>The main HTML file that Vite serves. It includes a root <code>&lt;div&gt;</code> where the React app is injected.</p>
-<h2 id="-package-lockjson">📄 <code>package-lock.json</code></h2>
+<h3 id="-package-lockjson">📄 <code>package-lock.json</code></h3>
 <p>Automatically generated file that locks the versions of dependencies for consistency across installations.</p>
-<h2 id="-packagejson">📄 <code>package.json</code></h2>
+<h3 id="-packagejson">📄 <code>package.json</code></h3>
 <p>Defines project metadata, dependencies, scripts, and configurations.</p>
-<h2 id="-readmemd">📄 <code>README.md</code></h2>
+<h3 id="-readmemd">📄 <code>README.md</code></h3>
 <p>A markdown file explaining the project, how to set it up, and how to use it.</p>
-<h2 id="-viteconfigjs">📄 <code>vite.config.js</code></h2>
+<h3 id="-viteconfigjs">📄 <code>vite.config.js</code></h3>
 <p>Configuration file for Vite, allowing customization of the development server and build process.</p>
 <h1 id="additional-content-other-resources">Additional Content: Other Resources</h1>
 <h3 id="react-docs">React Docs</h3>
