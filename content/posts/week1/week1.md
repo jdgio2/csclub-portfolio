@@ -110,9 +110,14 @@ export default function App() {
         -   Example input: "Connect with me: [LinkedIn link], [GitHub link], [Email link]." You can also include a copyright message like "© 2025 [Your Name]."
 
 -   [ ] **Import your new components into your `App.jsx`.**
+-   [ ] **The challengiest challenge of them all:** if you've completed the previous two challenges and have discovered that you're repeating yourself in your code, then try _extracting that repeated code into their own separate components_. Check out the ![React Docs](https://react.dev/learn/passing-props-to-a-component) on how to pass information to your components.
 
-If you've done all the challenges, it might look like this:
+If you've done all the challenges, it might look like this at the end:
 ![All challenges done](../challengesdone.png)
+
+Congratulations! At this point, you've created your foundation for your portfolio project. It's not a looker right now, but once we get to styling in the next session so we can really make it pop.
+
+To review, we went over how to create a Vite application using npm and node, removed the Vite boilerplate code to insert our own, created our own components and imported them into `App.jsx`, and added information to those components
 
 # Additional Content: Vite Project Structure Overview
 
@@ -182,7 +187,7 @@ Configuration file for Vite, allowing customization of the development server an
 
 ### React Docs
 
-The React docs are absolutely heat. It's packed with information and examples that will help you get a deeper understanding of how React works and how to use it efficiently. They have examples and challenges in every single part, and if you just spend a few hours going through it you'll be well on your way to knowing _a ton_ about React:  
+The React docs are absolutely _heat_. It's packed with information and examples that will help you get a deeper understanding of how React works and how to use it efficiently. They have examples and challenges in every single part, and if you just spend a few hours going through it you'll be well on your way to knowing _a ton_ about React:  
 [React Docs](https://reactjs.org/docs/getting-started.html)
 
 ### CSS Box Model
