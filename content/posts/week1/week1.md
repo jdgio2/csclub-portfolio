@@ -110,7 +110,7 @@ export default function App() {
         -   Example input: "Connect with me: [LinkedIn link], [GitHub link], [Email link]." You can also include a copyright message like "© 2025 [Your Name]."
 
 -   [ ] **Import your new components into your `App.jsx`.**
--   [ ] **The challengiest challenge of them all:** if you've completed the previous two challenges and have discovered that you're repeating yourself in your code, then try _extracting that repeated code into their own separate components_. Check out the ![React Docs](https://react.dev/learn/passing-props-to-a-component) on how to pass information to your components.
+-   [ ] **The challengiest challenge of them all:** if you've completed the previous two challenges and have discovered that you're repeating yourself in your code, then try _extracting that repeated code into their own separate components_. Check out the [React Docs](https://react.dev/learn/passing-props-to-a-component) on how to pass information to your components.
 
 If you've done all the challenges, it might look like this at the end:
 ![All challenges done](../challengesdone.png)
