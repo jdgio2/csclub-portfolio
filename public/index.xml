@@ -6,14 +6,14 @@
     <description>Recent content on CS Club Portfolio Tutorial</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 14 Jan 2024 07:07:07 +0100</lastBuildDate>
+    <lastBuildDate>Wed, 12 Mar 2025 06:40:21 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>My First Post</title>
+      <title>Week 1 - Environment Setup &amp; Basic React Component</title>
       <link>http://localhost:1313/posts/my-first-post/</link>
-      <pubDate>Sun, 14 Jan 2024 07:07:07 +0100</pubDate>
+      <pubDate>Wed, 12 Mar 2025 06:40:21 +0000</pubDate>
       <guid>http://localhost:1313/posts/my-first-post/</guid>
-      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;This is &lt;strong&gt;bold&lt;/strong&gt; text, and this is &lt;em&gt;emphasized&lt;/em&gt; text.&lt;/p&gt;&#xA;&lt;p&gt;Visit the &lt;a href=&#34;https://gohugo.io&#34;&gt;Hugo&lt;/a&gt; website!&lt;/p&gt;</description>
+      <description>&lt;h3 id=&#34;objective&#34;&gt;Objective&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Set up your project using Vite and React.&lt;/li&gt;&#xA;&lt;li&gt;Create your very first components (Header, About, Skills, Projects, Footer) for the portfolio&lt;/li&gt;&#xA;&lt;li&gt;Add basic information for&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;steps&#34;&gt;Steps&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Install Prerequisites&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Ensure Node.js is installed on your computer.&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Use &lt;code&gt;node --version&lt;/code&gt; in your terminal to check if it&amp;rsquo;s installed properly.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Create a New Vite Project&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open your terminal and run: &lt;code&gt;npm create vite@latest&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;Enter the name of your project and then hit enter. I&amp;rsquo;ll be naming mine &lt;code&gt;awesome-portfolio&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;When asked to pick a framework, select &lt;code&gt;React&lt;/code&gt; using the arrow keys and hit enter.&lt;/li&gt;&#xA;&lt;li&gt;When asked to select a variant, select &lt;code&gt;JavaScript&lt;/code&gt; using the arrow keys and hit enter.&lt;/li&gt;&#xA;&lt;li&gt;If you haven&amp;rsquo;t already, open your project in VSCode typing &lt;code&gt;code ./awesome-portfolio&lt;/code&gt; in your terminal (if it&amp;rsquo;s set up in your PATH, don&amp;rsquo;t worry if it doesn&amp;rsquo;t work) or by launching VSCode, going to &amp;ldquo;File&amp;rdquo; &amp;gt; &amp;ldquo;Open Folder&amp;hellip;&amp;rdquo; &amp;gt; and selecting the location where you created your portfolio.&lt;/li&gt;&#xA;&lt;li&gt;Open your terminal in VSCode by hitting &amp;ldquo;Terminal&amp;rdquo; in the top left menu and clicking &amp;ldquo;New Terminal&amp;rdquo;.&lt;/li&gt;&#xA;&lt;li&gt;Install all dependencies by typing &lt;code&gt;npm install&lt;/code&gt;. You might be asked if it&amp;rsquo;s okay to install Vite (or maybe some npm things). If so, keep hitting enter to accept them and start installing.&lt;/li&gt;&#xA;&lt;li&gt;Start the development server using: &lt;code&gt;npm run dev&lt;/code&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Problems?&lt;/strong&gt; If you encounter errors, verify your Node.js version and installation.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Project Structure Explained&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

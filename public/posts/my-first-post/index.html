@@ -20,14 +20,47 @@
   />
 
   
-  <title>My First Post-CS Club Portfolio Tutorial</title>
+  <title>Week 1 - Environment Setup &amp; Basic React Component-CS Club Portfolio Tutorial</title>
 
   
   <meta name="theme-color" />
 
-  <meta name="description" content="Introduction
-This is bold text, and this is emphasized text.
-Visit the Hugo website!" />
+  <meta name="description" content="Objective
+
+Set up your project using Vite and React.
+Create your very first components (Header, About, Skills, Projects, Footer) for the portfolio
+Add basic information for
+
+Steps
+
+
+Install Prerequisites
+
+Ensure Node.js is installed on your computer.
+
+Use node --version in your terminal to check if it&rsquo;s installed properly.
+
+
+
+
+
+Create a New Vite Project
+
+Open your terminal and run: npm create vite@latest
+Enter the name of your project and then hit enter. I&rsquo;ll be naming mine awesome-portfolio
+When asked to pick a framework, select React using the arrow keys and hit enter.
+When asked to select a variant, select JavaScript using the arrow keys and hit enter.
+If you haven&rsquo;t already, open your project in VSCode typing code ./awesome-portfolio in your terminal (if it&rsquo;s set up in your PATH, don&rsquo;t worry if it doesn&rsquo;t work) or by launching VSCode, going to &ldquo;File&rdquo; &gt; &ldquo;Open Folder&hellip;&rdquo; &gt; and selecting the location where you created your portfolio.
+Open your terminal in VSCode by hitting &ldquo;Terminal&rdquo; in the top left menu and clicking &ldquo;New Terminal&rdquo;.
+Install all dependencies by typing npm install. You might be asked if it&rsquo;s okay to install Vite (or maybe some npm things). If so, keep hitting enter to accept them and start installing.
+Start the development server using: npm run dev
+
+
+Problems? If you encounter errors, verify your Node.js version and installation.
+
+
+
+Project Structure Explained" />
   <meta name="author" content="CS Club Portfolio Tutorial" /><link rel="preload stylesheet" as="style" href="http://localhost:1313/main.min.css" />
 
   
@@ -131,11 +164,133 @@ Visit the Hugo website!" />
       class="prose prose-neutral dark:prose-invert relative mx-auto min-h-[calc(100vh-9rem)] max-w-(--w) px-8 pt-14 pb-16"
     ><article>
   <header class="mb-14">
-    <h1 class="my-0! pb-2.5">My First Post</h1><div class="text-xs antialiased opacity-60"><time>Jan 14, 2024</time></div></header>
+    <h1 class="my-0! pb-2.5">Week 1 - Environment Setup &amp; Basic React Component</h1><div class="text-xs antialiased opacity-60"><time>Mar 12, 2025</time></div></header>
 
-  <section><h2 id="introduction">Introduction</h2>
-<p>This is <strong>bold</strong> text, and this is <em>emphasized</em> text.</p>
-<p>Visit the <a href="https://gohugo.io">Hugo</a> website!</p>
+  <section><h3 id="objective">Objective</h3>
+<ul>
+<li>Set up your project using Vite and React.</li>
+<li>Create your very first components (Header, About, Skills, Projects, Footer) for the portfolio</li>
+<li>Add basic information for</li>
+</ul>
+<h3 id="steps">Steps</h3>
+<ol>
+<li>
+<p><strong>Install Prerequisites</strong></p>
+<ul>
+<li>Ensure Node.js is installed on your computer.
+<ul>
+<li>Use <code>node --version</code> in your terminal to check if it&rsquo;s installed properly.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Create a New Vite Project</strong></p>
+<ol>
+<li>Open your terminal and run: <code>npm create vite@latest</code></li>
+<li>Enter the name of your project and then hit enter. I&rsquo;ll be naming mine <code>awesome-portfolio</code></li>
+<li>When asked to pick a framework, select <code>React</code> using the arrow keys and hit enter.</li>
+<li>When asked to select a variant, select <code>JavaScript</code> using the arrow keys and hit enter.</li>
+<li>If you haven&rsquo;t already, open your project in VSCode typing <code>code ./awesome-portfolio</code> in your terminal (if it&rsquo;s set up in your PATH, don&rsquo;t worry if it doesn&rsquo;t work) or by launching VSCode, going to &ldquo;File&rdquo; &gt; &ldquo;Open Folder&hellip;&rdquo; &gt; and selecting the location where you created your portfolio.</li>
+<li>Open your terminal in VSCode by hitting &ldquo;Terminal&rdquo; in the top left menu and clicking &ldquo;New Terminal&rdquo;.</li>
+<li>Install all dependencies by typing <code>npm install</code>. You might be asked if it&rsquo;s okay to install Vite (or maybe some npm things). If so, keep hitting enter to accept them and start installing.</li>
+<li>Start the development server using: <code>npm run dev</code></li>
+</ol>
+<ul>
+<li><strong>Problems?</strong> If you encounter errors, verify your Node.js version and installation.</li>
+</ul>
+</li>
+<li>
+<p><strong>Project Structure Explained</strong></p>
+<ul>
+<li>Key folders:
+<code>src/</code>
+<code>public/</code></li>
+</ul>
+</li>
+<li>
+<p><strong>Create Your First Component</strong></p>
+<ul>
+<li>Create a file:
+<code>src/components/Header.jsx</code></li>
+<li>Add the following code:</li>
+</ul>
+</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-jsx" data-lang="jsx"><span style="display:flex;"><span><span style="color:#66d9ef">import</span> <span style="color:#a6e22e">React</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#34;react&#34;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">Header</span> <span style="color:#f92672">=</span> () =&gt; {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> (
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">header</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;<span style="color:#f92672">h1</span>&gt;<span style="color:#a6e22e">My</span> <span style="color:#a6e22e">Portfolio</span>&lt;/<span style="color:#f92672">h1</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;/<span style="color:#f92672">header</span>&gt;
+</span></span><span style="display:flex;"><span>    );
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">export</span> <span style="color:#66d9ef">default</span> <span style="color:#a6e22e">Header</span>;
+</span></span></code></pre></div><ul>
+<li>Import and render</li>
+<li></li>
+</ul>
+<ol start="5">
+<li><strong>Practice Challenge</strong>
+<ul>
+<li>Create a new components for your About, Skills, Projects, and Footer sections.</li>
+<li>Import into your <code>App.jsx</code></li>
+</ul>
+</li>
+</ol>
+<h1 id="vite-project-structure-overview">Vite Project Structure Overview</h1>
+<p>In this tutorial, we will go over the structure of a typical Vite + React project. Below is an explanation of each file and directory:</p>
+<h2 id="-node_modules">📂 <code>node_modules/</code></h2>
+<p>This folder contains all the dependencies installed via npm. You generally don’t need to manually edit anything inside this folder. It is automatically generated when you run <code>npm install</code>.</p>
+<h2 id="-public">📂 <code>public/</code></h2>
+<p>The <code>public</code> folder is where static assets (like images, icons, or fonts) are placed. These files won’t be processed by Vite and can be referenced directly in your HTML.</p>
+<ul>
+<li>📄 <code>vite.svg</code><br>
+A sample SVG file included with Vite’s default template.</li>
+</ul>
+<h2 id="-src">📂 <code>src/</code></h2>
+<p>This is where the main application code lives.</p>
+<ul>
+<li>
+<p>📂 <code>assets/</code></p>
+<ul>
+<li>📄 <code>react.svg</code><br>
+Another sample SVG file, typically used as the React logo.</li>
+</ul>
+</li>
+<li>
+<p>📄 <code>App.css</code><br>
+Styles for the <code>App.jsx</code> component.</p>
+</li>
+<li>
+<p>📄 <code>App.jsx</code><br>
+The main React component, serving as the entry point for the UI.</p>
+</li>
+<li>
+<p>📄 <code>index.css</code><br>
+Global CSS styles that apply to the whole app.</p>
+</li>
+<li>
+<p>📄 <code>main.jsx</code><br>
+The file where the React app is initialized and rendered into the DOM.</p>
+</li>
+</ul>
+<h2 id="-gitignore">🔹 <code>.gitignore</code></h2>
+<p>Specifies files and folders that Git should ignore, such as <code>node_modules</code> and build files.</p>
+<h2 id="-eslintconfigjs">📄 <code>eslint.config.js</code></h2>
+<p>Configuration file for ESLint, which helps maintain code quality by enforcing coding standards.</p>
+<h2 id="-indexhtml">📄 <code>index.html</code></h2>
+<p>The main HTML file that Vite serves. It includes a root <code>&lt;div&gt;</code> where the React app is injected.</p>
+<h2 id="-package-lockjson">📄 <code>package-lock.json</code></h2>
+<p>Automatically generated file that locks the versions of dependencies for consistency across installations.</p>
+<h2 id="-packagejson">📄 <code>package.json</code></h2>
+<p>Defines project metadata, dependencies, scripts, and configurations.</p>
+<h2 id="-readmemd">📄 <code>README.md</code></h2>
+<p>A markdown file explaining the project, how to set it up, and how to use it.</p>
+<h2 id="-viteconfigjs">📄 <code>vite.config.js</code></h2>
+<p>Configuration file for Vite, allowing customization of the development server and build process.</p>
 </section>
 
   </article></main><footer
