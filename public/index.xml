@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>CS Club Portfolio</title>
     <link>http://localhost:1313/</link>
     <description>Recent content on CS Club Portfolio</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 12 Mar 2025 06:40:21 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +13,63 @@
       <link>http://localhost:1313/posts/week1/week1/</link>
       <pubDate>Wed, 12 Mar 2025 06:40:21 +0000</pubDate>
       <guid>http://localhost:1313/posts/week1/week1/</guid>
-      <description>&lt;h2 id=&#34;objective&#34;&gt;Objective&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Set up your project using Vite and React.&lt;/li&gt;&#xA;&lt;li&gt;Create your very first components (Header, About, Skills, Projects, Footer) for the portfolio&lt;/li&gt;&#xA;&lt;li&gt;Add some basic info about yourself&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;steps&#34;&gt;Steps&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;h3 id=&#34;install-prerequisites&#34;&gt;&lt;strong&gt;Install Prerequisites&lt;/strong&gt;&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Ensure Node.js is installed on your computer.&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Use &lt;code&gt;node --version&lt;/code&gt; in your terminal to check if it&amp;rsquo;s installed properly.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;h3 id=&#34;create-a-new-vite-project&#34;&gt;&lt;strong&gt;Create a New Vite Project&lt;/strong&gt;&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;Navigate to the directory&lt;/strong&gt; where you want to create your project. In your terminal, run:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;cd path/to/your/directory&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;Example: &lt;code&gt;cd ~/Documents/Projects&lt;/code&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Open your terminal and run: &lt;code&gt;npm create vite@latest&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;Enter the name of your project and then hit enter. I&amp;rsquo;ll be naming mine &lt;code&gt;awesome-portfolio&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;When asked to pick a framework, select &lt;code&gt;React&lt;/code&gt; using the arrow keys and hit enter.&lt;/li&gt;&#xA;&lt;li&gt;When asked to select a variant, select &lt;code&gt;JavaScript&lt;/code&gt; using the arrow keys and hit enter.&lt;/li&gt;&#xA;&lt;li&gt;If you haven&amp;rsquo;t already, open your project in VSCode by typing &lt;code&gt;code ./awesome-portfolio&lt;/code&gt; in your terminal (if it&amp;rsquo;s set up in your PATH, don&amp;rsquo;t worry if it doesn&amp;rsquo;t work) or by launching VSCode, going to &amp;ldquo;File&amp;rdquo; &amp;gt; &amp;ldquo;Open Folder&amp;hellip;&amp;rdquo; &amp;gt; and selecting the location where you created your portfolio.&lt;/li&gt;&#xA;&lt;li&gt;Open your terminal in VSCode by hitting &amp;ldquo;Terminal&amp;rdquo; in the top left menu and clicking &amp;ldquo;New Terminal&amp;rdquo;.&lt;/li&gt;&#xA;&lt;li&gt;Install all dependencies by typing &lt;code&gt;npm install&lt;/code&gt;. You might be asked if it&amp;rsquo;s okay to install Vite (or maybe some npm things). If so, keep hitting enter to accept them and start installing.&lt;/li&gt;&#xA;&lt;li&gt;Start the development server using: &lt;code&gt;npm run dev&lt;/code&gt;, then ctrl+click on the localhost link that shows up in the terminal to see a demo in your browser.&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Problems?&lt;/strong&gt; If you encounter errors, verify your Node.js version and installation.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Overwhelmed?&lt;/strong&gt; That&amp;rsquo;s totally normal. You&amp;rsquo;re getting thrown in the deep end here. But don&amp;rsquo;t worry, this is 100% within your capabilities, trust me. If you want a deeper look at what each of the files and directories within the project are, then go to the &lt;a href=&#34;#additional-content-vite-project-structure-overview&#34;&gt;additional content&lt;/a&gt; at the bottom of the page for an in-depth breakdown.&lt;/li&gt;&#xA;&lt;li&gt;For now, we&amp;rsquo;ll be focusing primarily on &lt;code&gt;App.jsx&lt;/code&gt;.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;h3 id=&#34;edit-and-create-your-first-component&#34;&gt;&lt;strong&gt;Edit and Create Your First Component&lt;/strong&gt;&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Delete everything from &lt;code&gt;App.jsx&lt;/code&gt;, &lt;code&gt;App.css&lt;/code&gt;, and &lt;code&gt;index.css&lt;/code&gt;. Vite includes boilerplate code which we won&amp;rsquo;t be needing.&lt;/li&gt;&#xA;&lt;li&gt;In &lt;code&gt;App.jsx&lt;/code&gt;, insert the following:&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-jsx&#34; data-lang=&#34;jsx&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;export&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;default&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;App&lt;/span&gt;() {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;h1&lt;/span&gt;&amp;gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;Hello&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;world&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;!&lt;/span&gt;&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;h1&lt;/span&gt;&amp;gt;;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;This is how you&amp;rsquo;ll end up creating every component from now on: &lt;code&gt;export default function {ComponentName}&lt;/code&gt;.&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;objective&#34;&gt;Objective&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Set up your project using Vite and React.&lt;/li&gt;
+&lt;li&gt;Create your very first components (Header, About, Skills, Projects, Footer) for the portfolio&lt;/li&gt;
+&lt;li&gt;Add some basic info about yourself&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;steps&#34;&gt;Steps&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;h3 id=&#34;install-prerequisites&#34;&gt;&lt;strong&gt;Install Prerequisites&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Ensure Node.js is installed on your computer.
+&lt;ul&gt;
+&lt;li&gt;Use &lt;code&gt;node --version&lt;/code&gt; in your terminal to check if it&amp;rsquo;s installed properly.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;h3 id=&#34;create-a-new-vite-project&#34;&gt;&lt;strong&gt;Create a New Vite Project&lt;/strong&gt;&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Navigate to the directory&lt;/strong&gt; where you want to create your project. In your terminal, run:
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;cd path/to/your/directory&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Example: &lt;code&gt;cd ~/Documents/Projects&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Open your terminal and run: &lt;code&gt;npm create vite@latest&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Enter the name of your project and then hit enter. I&amp;rsquo;ll be naming mine &lt;code&gt;awesome-portfolio&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;When asked to pick a framework, select &lt;code&gt;React&lt;/code&gt; using the arrow keys and hit enter.&lt;/li&gt;
+&lt;li&gt;When asked to select a variant, select &lt;code&gt;JavaScript&lt;/code&gt; using the arrow keys and hit enter.&lt;/li&gt;
+&lt;li&gt;If you haven&amp;rsquo;t already, open your project in VSCode by typing &lt;code&gt;code ./awesome-portfolio&lt;/code&gt; in your terminal (if it&amp;rsquo;s set up in your PATH, don&amp;rsquo;t worry if it doesn&amp;rsquo;t work) or by launching VSCode, going to &amp;ldquo;File&amp;rdquo; &amp;gt; &amp;ldquo;Open Folder&amp;hellip;&amp;rdquo; &amp;gt; and selecting the location where you created your portfolio.&lt;/li&gt;
+&lt;li&gt;Open your terminal in VSCode by hitting &amp;ldquo;Terminal&amp;rdquo; in the top left menu and clicking &amp;ldquo;New Terminal&amp;rdquo;.&lt;/li&gt;
+&lt;li&gt;Install all dependencies by typing &lt;code&gt;npm install&lt;/code&gt;. You might be asked if it&amp;rsquo;s okay to install Vite (or maybe some npm things). If so, keep hitting enter to accept them and start installing.&lt;/li&gt;
+&lt;li&gt;Start the development server using: &lt;code&gt;npm run dev&lt;/code&gt;, then ctrl+click on the localhost link that shows up in the terminal to see a demo in your browser.
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Problems?&lt;/strong&gt; If you encounter errors, verify your Node.js version and installation.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Overwhelmed?&lt;/strong&gt; That&amp;rsquo;s totally normal. You&amp;rsquo;re getting thrown in the deep end here. But don&amp;rsquo;t worry, this is 100% within your capabilities, trust me. If you want a deeper look at what each of the files and directories within the project are, then go to the &lt;a href=&#34;#additional-content-vite-project-structure-overview&#34;&gt;additional content&lt;/a&gt; at the bottom of the page for an in-depth breakdown.&lt;/li&gt;
+&lt;li&gt;For now, we&amp;rsquo;ll be focusing primarily on &lt;code&gt;App.jsx&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;h3 id=&#34;edit-and-create-your-first-component&#34;&gt;&lt;strong&gt;Edit and Create Your First Component&lt;/strong&gt;&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Delete everything from &lt;code&gt;App.jsx&lt;/code&gt;, &lt;code&gt;App.css&lt;/code&gt;, and &lt;code&gt;index.css&lt;/code&gt;. Vite includes boilerplate code which we won&amp;rsquo;t be needing.&lt;/li&gt;
+&lt;li&gt;In &lt;code&gt;App.jsx&lt;/code&gt;, insert the following:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-jsx&#34; data-lang=&#34;jsx&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;export&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;default&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;App&lt;/span&gt;() {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;h1&lt;/span&gt;&amp;gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;Hello&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;world&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;!&lt;/span&gt;&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;h1&lt;/span&gt;&amp;gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;This is how you&amp;rsquo;ll end up creating every component from now on: &lt;code&gt;export default function {ComponentName}&lt;/code&gt;.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

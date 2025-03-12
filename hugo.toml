@@ -1,4 +1,6 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'CS Club Portfolio'
-theme = 'paper'
+theme = 'PaperMod'  
+[params]
+    defaultTheme = "auto"

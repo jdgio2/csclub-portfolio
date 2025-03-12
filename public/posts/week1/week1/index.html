@@ -1,31 +1,13 @@
-<!doctype html>
+<!DOCTYPE html>
+<html lang="en" dir="auto">
 
-
-
-
-
-
-
-<html
-  class="not-ready lg:text-base"
-  style="--bg:#faf8f1"
-  lang="en-us"
-  dir="ltr"
-><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1, shrink-to-fit=no"
-  />
-
-  
-  <title>Week 1 - Environment Setup &amp; Basic React Component-CS Club Portfolio</title>
-
-  
-  <meta name="theme-color" />
-
-  <meta name="description" content="Objective
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Week 1 - Environment Setup &amp; Basic React Component | CS Club Portfolio</title>
+<meta name="keywords" content="">
+<meta name="description" content="Objective
 
 Set up your project using Vite and React.
 Create your very first components (Header, About, Skills, Projects, Footer) for the portfolio
@@ -81,122 +63,122 @@ export default function App() {
 }
 
 
-This is how you&rsquo;ll end up creating every component from now on: export default function {ComponentName}." />
-  <meta name="author" content="CS Club Portfolio" /><link rel="preload stylesheet" as="style" href="http://localhost:1313/main.min.css" />
+This is how you&rsquo;ll end up creating every component from now on: export default function {ComponentName}.">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/posts/week1/week1/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.6da9a63d25a9608bca2f7f907a030e887a7dd3c3f3918e4cc113129361414bda.css" integrity="sha256-bammPSWpYIvKL3&#43;QegMOiHp908PzkY5MwRMSk2FBS9o=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/week1/week1/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
 
-  
-  <link rel="preload" as="image" href="http://localhost:1313/theme.png" />
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
 
-  
+            .list {
+                background: var(--theme);
+            }
 
-  
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
 
-  <script
-    defer
-    src="http://localhost:1313/highlight.min.js"
-    onload="hljs.initHighlightingOnLoad();"
-  ></script>
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
 
-  
-  <link
-    rel="icon"
-    href="http://localhost:1313/favicon.ico"
-  />
-  <link
-    rel="apple-touch-icon"
-    href="http://localhost:1313/apple-touch-icon.png"
-  />
-
-  <meta name="generator" content="Hugo 0.145.0">
+    </style>
+</noscript>
 </head>
-<body
-    class="bg-(--bg) text-black antialiased duration-200 ease-out [-webkit-tap-highlight-color:transparent] dark:text-white"
-  ><header
-  class="mx-auto flex h-[4.5rem] max-w-(--w) px-8 whitespace-nowrap lg:justify-center"
->
-  <div class="relative z-50 flex items-center ltr:mr-auto rtl:ml-auto">
-    <a
-      class="-translate-y-[1px] text-2xl font-medium"
-      href="http://localhost:1313/"
-      >CS Club Portfolio</a
-    >
-    <div
-      class="btn-dark text-[0px] ltr:ml-4 rtl:mr-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]"
-      role="button"
-      aria-label="Dark"
-    ></div>
-  </div>
 
-  <div
-    class="btn-menu relative z-50 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden ltr:-mr-8 rtl:-ml-8"
-    role="button"
-    aria-label="Menu"
-  ></div>
-
-  <script>
-    
-    const htmlClass = document.documentElement.classList;
-    setTimeout(() => {
-      htmlClass.remove('not-ready');
-    }, 10);
-
-    
-    const btnMenu = document.querySelector('.btn-menu');
-    btnMenu.addEventListener('click', () => {
-      htmlClass.toggle('open');
-    });
-
-    
-    const metaTheme = document.querySelector('meta[name="theme-color"]');
-    const lightBg = '#faf8f1'.replace(/"/g, '');
-    const setDark = (isDark) => {
-      metaTheme.setAttribute('content', isDark ? '#000' : lightBg);
-      htmlClass[isDark ? 'add' : 'remove']('dark');
-      localStorage.setItem('dark', isDark);
-    };
-
-    
-    const darkScheme = window.matchMedia('(prefers-color-scheme: dark)');
-    if (htmlClass.contains('dark')) {
-      setDark(true);
-    } else {
-      const darkVal = localStorage.getItem('dark');
-      setDark(darkVal ? darkVal === 'true' : darkScheme.matches);
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
     }
 
-    
-    darkScheme.addEventListener('change', (event) => {
-      setDark(event.matches);
-    });
+</script>
 
-    
-    const btnDark = document.querySelector('.btn-dark');
-    btnDark.addEventListener('click', () => {
-      setDark(localStorage.getItem('dark') !== 'true');
-    });
-  </script>
-
-  <div
-    class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full flex-col justify-center bg-(--bg) pb-16 duration-200 select-none lg:static lg:h-auto lg:flex-row lg:bg-transparent! lg:pb-0 lg:transition-none"
-  >
-  </div>
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="CS Club Portfolio (Alt + H)">CS Club Portfolio</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
 </header>
-<main
-      class="prose prose-neutral dark:prose-invert relative mx-auto min-h-[calc(100vh-9rem)] max-w-(--w) px-8 pt-14 pb-16"
-    ><article>
-  <header class="mb-14">
-    <h1 class="my-0! pb-2.5">Week 1 - Environment Setup &amp; Basic React Component</h1><div class="text-xs antialiased opacity-60"><time>Mar 12, 2025</time></div></header>
+<main class="main">
 
-  <section><h2 id="objective">Objective</h2>
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Week 1 - Environment Setup &amp; Basic React Component
+    </h1>
+    <div class="post-meta"><span title='2025-03-12 06:40:21 +0000 UTC'>March 12, 2025</span>
+
+</div>
+  </header> 
+  <div class="post-content"><h2 id="objective">Objective<a hidden class="anchor" aria-hidden="true" href="#objective">#</a></h2>
 <ul>
 <li>Set up your project using Vite and React.</li>
 <li>Create your very first components (Header, About, Skills, Projects, Footer) for the portfolio</li>
 <li>Add some basic info about yourself</li>
 </ul>
-<h2 id="steps">Steps</h2>
+<h2 id="steps">Steps<a hidden class="anchor" aria-hidden="true" href="#steps">#</a></h2>
 <ol>
 <li>
-<h3 id="install-prerequisites"><strong>Install Prerequisites</strong></h3>
+<h3 id="install-prerequisites"><strong>Install Prerequisites</strong><a hidden class="anchor" aria-hidden="true" href="#install-prerequisites">#</a></h3>
 <ul>
 <li>Ensure Node.js is installed on your computer.
 <ul>
@@ -206,7 +188,7 @@ This is how you&rsquo;ll end up creating every component from now on: export def
 </ul>
 </li>
 <li>
-<h3 id="create-a-new-vite-project"><strong>Create a New Vite Project</strong></h3>
+<h3 id="create-a-new-vite-project"><strong>Create a New Vite Project</strong><a hidden class="anchor" aria-hidden="true" href="#create-a-new-vite-project">#</a></h3>
 <ol>
 <li><strong>Navigate to the directory</strong> where you want to create your project. In your terminal, run:
 <ul>
@@ -231,7 +213,7 @@ This is how you&rsquo;ll end up creating every component from now on: export def
 </ol>
 </li>
 <li>
-<h3 id="edit-and-create-your-first-component"><strong>Edit and Create Your First Component</strong></h3>
+<h3 id="edit-and-create-your-first-component"><strong>Edit and Create Your First Component</strong><a hidden class="anchor" aria-hidden="true" href="#edit-and-create-your-first-component">#</a></h3>
 <ol>
 <li>Delete everything from <code>App.jsx</code>, <code>App.css</code>, and <code>index.css</code>. Vite includes boilerplate code which we won&rsquo;t be needing.</li>
 <li>In <code>App.jsx</code>, insert the following:</li>
@@ -255,7 +237,7 @@ This is how you&rsquo;ll end up creating every component from now on: export def
 <ol start="3">
 <li>
 <p>Save <code>App.jsx</code> and go check out your demo to see your changes. You should see something like this:
-<img src="../helloworld.png" alt="Hello World example image"></p>
+<img alt="Hello World example image" loading="lazy" src="../helloworld.png"></p>
 </li>
 <li>
 <p>Inside the <code>src</code> folder, create a new file called <code>Header.jsx</code>.</p>
@@ -293,11 +275,11 @@ This is how you&rsquo;ll end up creating every component from now on: export def
 </ul>
 <ol start="7">
 <li>You should see something like this:
-<img src="../headerdone.png" alt="Page with basic header component"></li>
+<img alt="Page with basic header component" loading="lazy" src="../headerdone.png"></li>
 </ol>
 </li>
 </ul>
-<h2 id="practice-challenge">Practice Challenge</h2>
+<h2 id="practice-challenge">Practice Challenge<a hidden class="anchor" aria-hidden="true" href="#practice-challenge">#</a></h2>
 <ul>
 <li>
 <p><input disabled="" type="checkbox"> <strong>Create new components for your About, Skills, Projects, and Footer sections.</strong></p>
@@ -344,31 +326,31 @@ This is how you&rsquo;ll end up creating every component from now on: export def
 </li>
 </ul>
 <p>If you&rsquo;ve done all the challenges, it might look like this at the end:
-<img src="../challengesdone.png" alt="All challenges done"></p>
+<img alt="All challenges done" loading="lazy" src="../challengesdone.png"></p>
 <p>Congratulations! At this point, you&rsquo;ve created your foundation for your portfolio project. It&rsquo;s not a looker right now, but once we get to styling in the next session so we can really make it pop and look impressive.</p>
 <p>To review, we went over how to create a Vite application using npm and node, removed the Vite boilerplate code to insert our own, created our own components and imported them into <code>App.jsx</code>, and added information to those components. Check out the <a href="#additional-content-vite-project-structure-overview">additional content on the folder structure</a> or <a href="#additional-content-other-resources">some other resources</a> to learn more about today.</p>
 <p>You&rsquo;ve done a great job!</p>
-<h1 id="additional-content-other-resources">Additional Content: Other Resources</h1>
-<h3 id="react-docs">React Docs</h3>
+<h1 id="additional-content-other-resources">Additional Content: Other Resources<a hidden class="anchor" aria-hidden="true" href="#additional-content-other-resources">#</a></h1>
+<h3 id="react-docs">React Docs<a hidden class="anchor" aria-hidden="true" href="#react-docs">#</a></h3>
 <p>The React docs are absolutely <em>heat</em>. It&rsquo;s packed with information and examples that will help you get a deeper understanding of how React works and how to use it efficiently. They have examples and challenges in every single part, and if you just spend a few hours going through it you&rsquo;ll be well on your way to knowing <em>a ton</em> about React:<br>
 <a href="https://reactjs.org/docs/getting-started.html">React Docs</a></p>
-<h3 id="css-box-model">CSS Box Model</h3>
+<h3 id="css-box-model">CSS Box Model<a hidden class="anchor" aria-hidden="true" href="#css-box-model">#</a></h3>
 <p>This is for when we start styling our portfolio. You may be surprised to learn that you&rsquo;ve got a solid foundation for your portfolio just from this session. However, in order to make the portfolio really pop, you&rsquo;re going to need CSS (we&rsquo;ll be using <a href="https://tailwindcss.com/">Tailwind</a> next time). Integral to CSS is the box model, so I would recommend brushing up on that here:
 <a href="https://www.w3schools.com/css/css_boxmodel.asp">W3Schools Box Model</a></p>
-<h3 id="flexbox-froggy">Flexbox Froggy</h3>
+<h3 id="flexbox-froggy">Flexbox Froggy<a hidden class="anchor" aria-hidden="true" href="#flexbox-froggy">#</a></h3>
 <p>Also for when we start to style our website, the hardest part is undoubtedly going to be the layout. The CSS <code>flex</code> property has made our lives significantly easier, but there&rsquo;s still a bit of a learning curve. Flexbox Froggy will make you a pro at using <code>flex</code>/<code>flexbox</code> through a fun game:
 <a href="https://flexboxfroggy.com/">Flexbox Froggy</a></p>
-<h1 id="additional-content-vite-project-structure-overview">Additional Content: Vite Project Structure Overview</h1>
+<h1 id="additional-content-vite-project-structure-overview">Additional Content: Vite Project Structure Overview<a hidden class="anchor" aria-hidden="true" href="#additional-content-vite-project-structure-overview">#</a></h1>
 <p>Below is an explanation of each file and directory in a base Vite + React project:</p>
-<h3 id="-node_modules">📂 <code>node_modules/</code></h3>
+<h3 id="-node_modules">📂 <code>node_modules/</code><a hidden class="anchor" aria-hidden="true" href="#-node_modules">#</a></h3>
 <p>This folder contains all the dependencies installed via npm. You generally don’t need to manually edit anything inside this folder. It is automatically generated when you run <code>npm install</code>.</p>
-<h3 id="-public">📂 <code>public/</code></h3>
+<h3 id="-public">📂 <code>public/</code><a hidden class="anchor" aria-hidden="true" href="#-public">#</a></h3>
 <p>The <code>public</code> folder is where static assets (like images, icons, or fonts) are placed. These files won’t be processed by Vite and can be referenced directly in your HTML.</p>
 <ul>
 <li>📄 <code>vite.svg</code><br>
 A sample SVG file included with Vite’s default template.</li>
 </ul>
-<h3 id="-src">📂 <code>src/</code></h3>
+<h3 id="-src">📂 <code>src/</code><a hidden class="anchor" aria-hidden="true" href="#-src">#</a></h3>
 <p>This is where the main application code lives.</p>
 <ul>
 <li>
@@ -395,36 +377,100 @@ Global CSS styles that apply to the whole app.</p>
 The file where the React app is initialized and rendered into the DOM.</p>
 </li>
 </ul>
-<h3 id="-gitignore">🔹 <code>.gitignore</code></h3>
+<h3 id="-gitignore">🔹 <code>.gitignore</code><a hidden class="anchor" aria-hidden="true" href="#-gitignore">#</a></h3>
 <p>Specifies files and folders that Git should ignore, such as <code>node_modules</code> and build files.</p>
-<h3 id="-eslintconfigjs">📄 <code>eslint.config.js</code></h3>
+<h3 id="-eslintconfigjs">📄 <code>eslint.config.js</code><a hidden class="anchor" aria-hidden="true" href="#-eslintconfigjs">#</a></h3>
 <p>Configuration file for ESLint, which helps maintain code quality by enforcing coding standards.</p>
-<h3 id="-indexhtml">📄 <code>index.html</code></h3>
+<h3 id="-indexhtml">📄 <code>index.html</code><a hidden class="anchor" aria-hidden="true" href="#-indexhtml">#</a></h3>
 <p>The main HTML file that Vite serves. It includes a root <code>&lt;div&gt;</code> where the React app is injected.</p>
-<h3 id="-package-lockjson">📄 <code>package-lock.json</code></h3>
+<h3 id="-package-lockjson">📄 <code>package-lock.json</code><a hidden class="anchor" aria-hidden="true" href="#-package-lockjson">#</a></h3>
 <p>Automatically generated file that locks the versions of dependencies for consistency across installations.</p>
-<h3 id="-packagejson">📄 <code>package.json</code></h3>
+<h3 id="-packagejson">📄 <code>package.json</code><a hidden class="anchor" aria-hidden="true" href="#-packagejson">#</a></h3>
 <p>Defines project metadata, dependencies, scripts, and configurations.</p>
-<h3 id="-readmemd">📄 <code>README.md</code></h3>
+<h3 id="-readmemd">📄 <code>README.md</code><a hidden class="anchor" aria-hidden="true" href="#-readmemd">#</a></h3>
 <p>A markdown file explaining the project, how to set it up, and how to use it.</p>
-<h3 id="-viteconfigjs">📄 <code>vite.config.js</code></h3>
+<h3 id="-viteconfigjs">📄 <code>vite.config.js</code><a hidden class="anchor" aria-hidden="true" href="#-viteconfigjs">#</a></h3>
 <p>Configuration file for Vite, allowing customization of the development server and build process.</p>
-</section>
 
-  </article></main><footer
-  class="mx-auto flex h-[4.5rem] max-w-(--w) items-center px-8 text-xs tracking-wider uppercase opacity-60"
->
-  <div class="mr-auto">&copy;2025<a class="link" href="http://localhost:1313/">CS Club Portfolio</a></div>
-  <a class="link mx-6" href="https://gohugo.io/" rel="noopener" target="_blank"
-    >powered by hugo️️</a
-  >️
-  <a
-    class="link"
-    href="https://github.com/nanxiaobei/hugo-paper"
-    rel="noopener"
-    target="_blank"
-    >hugo-paper</a
-  >
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">CS Club Portfolio</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
 </footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
 </body>
+
 </html>
