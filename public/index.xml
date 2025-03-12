@@ -13,7 +13,8 @@
       <link>http://localhost:1313/posts/week1/week1/</link>
       <pubDate>Wed, 12 Mar 2025 06:40:21 +0000</pubDate>
       <guid>http://localhost:1313/posts/week1/week1/</guid>
-      <description>&lt;h2 id=&#34;objective&#34;&gt;Objective&lt;/h2&gt;
+      <description>&lt;p&gt;&lt;a href=&#34;https://jdgio2.github.io/csclub-portfolio/posts/week1/week1/&#34;&gt;Check out the completed GitHub repo for this week&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;objective&#34;&gt;Objective&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Set up your project using Vite and React.&lt;/li&gt;
 &lt;li&gt;Create your very first components (Header, About, Skills, Projects, Footer) for the portfolio&lt;/li&gt;

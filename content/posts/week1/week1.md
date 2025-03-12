@@ -4,6 +4,8 @@ date = 2025-03-12T06:40:21+00:00
 draft = false
 +++
 
+[Check out the completed GitHub repo for this week](https://jdgio2.github.io/csclub-portfolio/posts/week1/week1/)
+
 ## Objective
 
 -   Set up your project using Vite and React.
