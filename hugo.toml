@@ -3,4 +3,4 @@ languageCode = 'en-us'
 title = 'CS Club Portfolio'
 theme = 'PaperMod'  
 [params]
-    defaultTheme = "auto"
+    defaultTheme = "light"
