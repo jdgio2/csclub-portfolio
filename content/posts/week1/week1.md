@@ -115,9 +115,11 @@ export default function App() {
 If you've done all the challenges, it might look like this at the end:
 ![All challenges done](../challengesdone.png)
 
-Congratulations! At this point, you've created your foundation for your portfolio project. It's not a looker right now, but once we get to styling in the next session so we can really make it pop.
+Congratulations! At this point, you've created your foundation for your portfolio project. It's not a looker right now, but once we get to styling in the next session so we can really make it pop and look impressive.
 
-To review, we went over how to create a Vite application using npm and node, removed the Vite boilerplate code to insert our own, created our own components and imported them into `App.jsx`, and added information to those components
+To review, we went over how to create a Vite application using npm and node, removed the Vite boilerplate code to insert our own, created our own components and imported them into `App.jsx`, and added information to those components. Check out the [[# Additional Content: Vite Project Structure Overview]] or [[# Additional Content: Other Resources]] to learn more about today.
+
+You've done a great job!
 
 # Additional Content: Vite Project Structure Overview
 
