@@ -33,6 +33,7 @@ Add some basic info about yourself
 
 Steps
 
+
 Install Prerequisites
 
 Ensure Node.js is installed on your computer.
@@ -42,21 +43,30 @@ Use node --version in your terminal to check if it&rsquo;s installed properly.
 
 
 
+
 Create a New Vite Project
+
+Navigate to the directory where you want to create your project. In your terminal, run:
+
+cd path/to/your/directory
+Example: cd ~/Documents/Projects
+
 
 Open your terminal and run: npm create vite@latest
 Enter the name of your project and then hit enter. I&rsquo;ll be naming mine awesome-portfolio
 When asked to pick a framework, select React using the arrow keys and hit enter.
 When asked to select a variant, select JavaScript using the arrow keys and hit enter.
-If you haven&rsquo;t already, open your project in VSCode typing code ./awesome-portfolio in your terminal (if it&rsquo;s set up in your PATH, don&rsquo;t worry if it doesn&rsquo;t work) or by launching VSCode, going to &ldquo;File&rdquo; &gt; &ldquo;Open Folder&hellip;&rdquo; &gt; and selecting the location where you created your portfolio.
+If you haven&rsquo;t already, open your project in VSCode by typing code ./awesome-portfolio in your terminal (if it&rsquo;s set up in your PATH, don&rsquo;t worry if it doesn&rsquo;t work) or by launching VSCode, going to &ldquo;File&rdquo; &gt; &ldquo;Open Folder&hellip;&rdquo; &gt; and selecting the location where you created your portfolio.
 Open your terminal in VSCode by hitting &ldquo;Terminal&rdquo; in the top left menu and clicking &ldquo;New Terminal&rdquo;.
 Install all dependencies by typing npm install. You might be asked if it&rsquo;s okay to install Vite (or maybe some npm things). If so, keep hitting enter to accept them and start installing.
-Start the development server using: npm run dev then ctrl&#43;click on the localhost link that shows up in the terminal to see a demo in your browser.
+Start the development server using: npm run dev, then ctrl&#43;click on the localhost link that shows up in the terminal to see a demo in your browser.
 
-
-Problems? If you encounter errors, verify your Node.js version and installation.
-Overwhelmed? That&rsquo;s totally normal. You&rsquo;re getting thrown in the deep end here. But don&rsquo;t worry, this is 100% within your capabilities, trust me. If you want a deeper look at what each of the files and directories within the project are, then go to the [[#Additional Content Vite Project Structure Overview]] at the bottom of the page for an in-depth breakdown.
+Problems? If you encounter errors, verify your Node.js version and installation.
+Overwhelmed? That&rsquo;s totally normal. You&rsquo;re getting thrown in the deep end here. But don&rsquo;t worry, this is 100% within your capabilities, trust me. If you want a deeper look at what each of the files and directories within the project are, then go to the additional content at the bottom of the page for an in-depth breakdown.
 For now, we&rsquo;ll be focusing primarily on App.jsx.
+
+
+
 
 
 Edit and Create Your First Component
@@ -185,7 +195,8 @@ This is how you&rsquo;ll end up creating every component from now on: export def
 </ul>
 <h2 id="steps">Steps</h2>
 <ol>
-<li><strong>Install Prerequisites</strong>
+<li>
+<h3 id="install-prerequisites"><strong>Install Prerequisites</strong></h3>
 <ul>
 <li>Ensure Node.js is installed on your computer.
 <ul>
@@ -194,24 +205,33 @@ This is how you&rsquo;ll end up creating every component from now on: export def
 </li>
 </ul>
 </li>
-<li><strong>Create a New Vite Project</strong>
+<li>
+<h3 id="create-a-new-vite-project"><strong>Create a New Vite Project</strong></h3>
 <ol>
+<li><strong>Navigate to the directory</strong> where you want to create your project. In your terminal, run:
+<ul>
+<li><code>cd path/to/your/directory</code></li>
+<li>Example: <code>cd ~/Documents/Projects</code></li>
+</ul>
+</li>
 <li>Open your terminal and run: <code>npm create vite@latest</code></li>
 <li>Enter the name of your project and then hit enter. I&rsquo;ll be naming mine <code>awesome-portfolio</code></li>
 <li>When asked to pick a framework, select <code>React</code> using the arrow keys and hit enter.</li>
 <li>When asked to select a variant, select <code>JavaScript</code> using the arrow keys and hit enter.</li>
-<li>If you haven&rsquo;t already, open your project in VSCode typing <code>code ./awesome-portfolio</code> in your terminal (if it&rsquo;s set up in your PATH, don&rsquo;t worry if it doesn&rsquo;t work) or by launching VSCode, going to &ldquo;File&rdquo; &gt; &ldquo;Open Folder&hellip;&rdquo; &gt; and selecting the location where you created your portfolio.</li>
+<li>If you haven&rsquo;t already, open your project in VSCode by typing <code>code ./awesome-portfolio</code> in your terminal (if it&rsquo;s set up in your PATH, don&rsquo;t worry if it doesn&rsquo;t work) or by launching VSCode, going to &ldquo;File&rdquo; &gt; &ldquo;Open Folder&hellip;&rdquo; &gt; and selecting the location where you created your portfolio.</li>
 <li>Open your terminal in VSCode by hitting &ldquo;Terminal&rdquo; in the top left menu and clicking &ldquo;New Terminal&rdquo;.</li>
 <li>Install all dependencies by typing <code>npm install</code>. You might be asked if it&rsquo;s okay to install Vite (or maybe some npm things). If so, keep hitting enter to accept them and start installing.</li>
-<li>Start the development server using: <code>npm run dev</code> then ctrl+click on the localhost link that shows up in the terminal to see a demo in your browser.</li>
-</ol>
+<li>Start the development server using: <code>npm run dev</code>, then ctrl+click on the localhost link that shows up in the terminal to see a demo in your browser.
 <ul>
-<li><strong>Problems?</strong> If you encounter errors, verify your Node.js version and installation.</li>
-<li><strong>Overwhelmed?</strong> That&rsquo;s totally normal. You&rsquo;re getting thrown in the deep end here. But don&rsquo;t worry, this is 100% within your capabilities, trust me. If you want a deeper look at what each of the files and directories within the project are, then go to the [[#Additional Content Vite Project Structure Overview]] at the bottom of the page for an in-depth breakdown.</li>
+<li><strong>Problems?</strong> If you encounter errors, verify your Node.js version and installation.</li>
+<li><strong>Overwhelmed?</strong> That&rsquo;s totally normal. You&rsquo;re getting thrown in the deep end here. But don&rsquo;t worry, this is 100% within your capabilities, trust me. If you want a deeper look at what each of the files and directories within the project are, then go to the <a href="#additional-content-vite-project-structure-overview">additional content</a> at the bottom of the page for an in-depth breakdown.</li>
 <li>For now, we&rsquo;ll be focusing primarily on <code>App.jsx</code>.</li>
 </ul>
 </li>
-<li><strong>Edit and Create Your First Component</strong>
+</ol>
+</li>
+<li>
+<h3 id="edit-and-create-your-first-component"><strong>Edit and Create Your First Component</strong></h3>
 <ol>
 <li>Delete everything from <code>App.jsx</code>, <code>App.css</code>, and <code>index.css</code>. Vite includes boilerplate code which we won&rsquo;t be needing.</li>
 <li>In <code>App.jsx</code>, insert the following:</li>
@@ -226,15 +246,12 @@ This is how you&rsquo;ll end up creating every component from now on: export def
 <p>This is how you&rsquo;ll end up creating every component from now on: <code>export default function {ComponentName}</code>.</p>
 <details>
     <summary>⬅️ Click the triangle for more info <code>App.jsx</code></summary>
-    <pre><code>This code above is called a _component_. It looks just like a function, but it actually is a powerful way to create reusable pieces of UI in React. Components let you break your interface into independent, manageable parts that can maintain their own state and be easily composed together.
-</code></pre>
+    <p>This code above is called a <em>component</em>. It looks just like a function, but it actually is a powerful way to create reusable pieces of UI in React. Components let you break your interface into independent, manageable parts that can maintain their own state and be easily composed together.</p>
 <p>The <code>App</code> component is particular is something you&rsquo;ll see in every React app, and serves as the root component for the entire app!</p>
 <p>What you&rsquo;re returning in this component looks <em>a lot</em> like HTML, but is actually a different language called &ldquo;jsx&rdquo;, which essentially just tells JavaScript to insert an <code>h1</code> element into <code>index.html</code>.</p>
 
 </details>
 
-</li>
-</ul>
 <ol start="3">
 <li>
 <p>Save <code>App.jsx</code> and go check out your demo to see your changes. You should see something like this:
@@ -278,6 +295,8 @@ This is how you&rsquo;ll end up creating every component from now on: export def
 <li>You should see something like this:
 <img src="../headerdone.png" alt="Page with basic header component"></li>
 </ol>
+</li>
+</ul>
 <h2 id="practice-challenge">Practice Challenge</h2>
 <ul>
 <li>
@@ -327,8 +346,18 @@ This is how you&rsquo;ll end up creating every component from now on: export def
 <p>If you&rsquo;ve done all the challenges, it might look like this at the end:
 <img src="../challengesdone.png" alt="All challenges done"></p>
 <p>Congratulations! At this point, you&rsquo;ve created your foundation for your portfolio project. It&rsquo;s not a looker right now, but once we get to styling in the next session so we can really make it pop and look impressive.</p>
-<p>To review, we went over how to create a Vite application using npm and node, removed the Vite boilerplate code to insert our own, created our own components and imported them into <code>App.jsx</code>, and added information to those components. Check out the [[# Additional Content: Vite Project Structure Overview]] or [[# Additional Content: Other Resources]] to learn more about today.</p>
+<p>To review, we went over how to create a Vite application using npm and node, removed the Vite boilerplate code to insert our own, created our own components and imported them into <code>App.jsx</code>, and added information to those components. Check out the <a href="#additional-content-vite-project-structure-overview">additional content on the folder structure</a> or <a href="#additional-content-other-resources">some other resources</a> to learn more about today.</p>
 <p>You&rsquo;ve done a great job!</p>
+<h1 id="additional-content-other-resources">Additional Content: Other Resources</h1>
+<h3 id="react-docs">React Docs</h3>
+<p>The React docs are absolutely <em>heat</em>. It&rsquo;s packed with information and examples that will help you get a deeper understanding of how React works and how to use it efficiently. They have examples and challenges in every single part, and if you just spend a few hours going through it you&rsquo;ll be well on your way to knowing <em>a ton</em> about React:<br>
+<a href="https://reactjs.org/docs/getting-started.html">React Docs</a></p>
+<h3 id="css-box-model">CSS Box Model</h3>
+<p>This is for when we start styling our portfolio. You may be surprised to learn that you&rsquo;ve got a solid foundation for your portfolio just from this session. However, in order to make the portfolio really pop, you&rsquo;re going to need CSS (we&rsquo;ll be using <a href="https://tailwindcss.com/">Tailwind</a> next time). Integral to CSS is the box model, so I would recommend brushing up on that here:
+<a href="https://www.w3schools.com/css/css_boxmodel.asp">W3Schools Box Model</a></p>
+<h3 id="flexbox-froggy">Flexbox Froggy</h3>
+<p>Also for when we start to style our website, the hardest part is undoubtedly going to be the layout. The CSS <code>flex</code> property has made our lives significantly easier, but there&rsquo;s still a bit of a learning curve. Flexbox Froggy will make you a pro at using <code>flex</code>/<code>flexbox</code> through a fun game:
+<a href="https://flexboxfroggy.com/">Flexbox Froggy</a></p>
 <h1 id="additional-content-vite-project-structure-overview">Additional Content: Vite Project Structure Overview</h1>
 <p>Below is an explanation of each file and directory in a base Vite + React project:</p>
 <h3 id="-node_modules">📂 <code>node_modules/</code></h3>
@@ -380,16 +409,6 @@ The file where the React app is initialized and rendered into the DOM.</p>
 <p>A markdown file explaining the project, how to set it up, and how to use it.</p>
 <h3 id="-viteconfigjs">📄 <code>vite.config.js</code></h3>
 <p>Configuration file for Vite, allowing customization of the development server and build process.</p>
-<h1 id="additional-content-other-resources">Additional Content: Other Resources</h1>
-<h3 id="react-docs">React Docs</h3>
-<p>The React docs are absolutely <em>heat</em>. It&rsquo;s packed with information and examples that will help you get a deeper understanding of how React works and how to use it efficiently. They have examples and challenges in every single part, and if you just spend a few hours going through it you&rsquo;ll be well on your way to knowing <em>a ton</em> about React:<br>
-<a href="https://reactjs.org/docs/getting-started.html">React Docs</a></p>
-<h3 id="css-box-model">CSS Box Model</h3>
-<p>This is for when we start styling our portfolio. You may be surprised to learn that you&rsquo;ve got a solid foundation for your portfolio just from this session. However, in order to make the portfolio really pop, you&rsquo;re going to need CSS (we&rsquo;ll be using <a href="https://tailwindcss.com/">Tailwind</a> next time). Integral to CSS is the box model, so I would recommend brushing up on that here:
-<a href="https://www.w3schools.com/css/css_boxmodel.asp">W3Schools Box Model</a></p>
-<h3 id="flexbox-froggy">Flexbox Froggy</h3>
-<p>Also for when we start to style our website, the hardest part is undoubtedly going to be the layout. The CSS <code>flex</code> property has made our lives significantly easier, but there&rsquo;s still a bit of a learning curve. Flexbox Froggy will make you a pro at using <code>flex</code>/<code>flexbox</code> through a fun game:
-<a href="https://flexboxfroggy.com/">Flexbox Froggy</a></p>
 </section>
 
   </article></main><footer
