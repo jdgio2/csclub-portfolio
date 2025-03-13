@@ -100,7 +100,7 @@ What you're returning in this component looks _a lot_ like HTML, but is actually
 
 ## Practice Challenge
 
--   [ ] **Create new components for your About, Skills, Projects, and Footer sections.**
+-   [ ] **Create new components for your [Hero](https://www.michellepontvert.com/blog/what-hero-section), About, Skills, Projects, and Footer sections.**
 
     -   **Hero Section**
         -   Includes a headline, a brief description, and a call-to-action button (like "Contact Me" or "View My Work").
