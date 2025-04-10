@@ -315,6 +315,8 @@ export default function Hero() {
 }
 ```
 
+# This is incomplete, sorry 🙂
+
 # Normal CSS vs TailwindCSS
 
 When you're writing **normal CSS**, you're doing things like this:
