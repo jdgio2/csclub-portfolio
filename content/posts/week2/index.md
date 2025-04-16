@@ -16,7 +16,8 @@ Today, we're going to turn our website from this 🤢:
 ![website before](websitebefore.png)
 
 To this:
-(results may vary)
+(results may vary based on how cracked you are)
+{{<video src="videodemo.mp4" autoplay="true" loop="true">}}
 
 ## Steps
 
