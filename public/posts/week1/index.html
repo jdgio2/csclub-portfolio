@@ -87,10 +87,10 @@ This is how you&rsquo;ll end up creating every component from now on: export def
 </noscript>
 </head>
 
-<body class="" id="top">
+<body class=" dark" id="top">
 <script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.body.classList.add('dark');
+    if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
     }
 
 </script>

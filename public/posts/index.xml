@@ -22,9 +22,9 @@
 &lt;/ul&gt;
 &lt;p&gt;Today, we&amp;rsquo;re going to turn our website from this 🤢:
 &lt;img alt=&#34;website before&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/posts/week2/websitebefore.png&#34;&gt;&lt;/p&gt;
-&lt;p&gt;To this:
-(results vary on how cracked you are)
-&lt;video preload=&#34;auto&#34; width=&#34;100%&#34;  autoplay loop playsinline class=&#34;html-video&#34;&gt;
+&lt;p&gt;Into this:
+(results may vary slightly based on how cracked you are)
+&lt;video controls preload=&#34;auto&#34; width=&#34;100%&#34;  autoplay loop playsinline class=&#34;html-video&#34;&gt;
         &lt;source src=&#34;http://localhost:1313/posts/week2/videodemo.mp4&#34; type=&#34;video/mp4&#34;&gt;
       &lt;span&gt;&lt;/span&gt;
     &lt;/video&gt;&lt;/p&gt;
