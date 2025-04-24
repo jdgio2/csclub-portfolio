@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Week 3 - Deployment | CS Club Portfolio</title>
+<meta name="keywords" content="">
+<meta name="description" content="Check out the completed GitHub repo for this week
+Objective
+
+Deploy our website so that anyone can see it.
+
+At this point, you should have a nice and fancy website. Only issue is, it only lives on your computer right now. You want other people to access it just like any other website, and for that, we&rsquo;ll need a host.
+Today, we&rsquo;ll be fully deploying your website so that you can show it off to anyone you like!">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/posts/week3/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.6da9a63d25a9608bca2f7f907a030e887a7dd3c3f3918e4cc113129361414bda.css" integrity="sha256-bammPSWpYIvKL3&#43;QegMOiHp908PzkY5MwRMSk2FBS9o=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/week3/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class=" dark" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="CS Club Portfolio (Alt + H)">CS Club Portfolio</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Week 3 - Deployment
+    </h1>
+    <div class="post-meta"><span title='2025-04-23 15:57:56 -0700 PDT'>April 23, 2025</span>
+
+</div>
+  </header> 
+  <div class="post-content"><p><a href="https://github.com/jdgio2/cs-club-portfolio-w2">Check out the completed GitHub repo for this week</a></p>
+<h2 id="objective">Objective<a hidden class="anchor" aria-hidden="true" href="#objective">#</a></h2>
+<ul>
+<li>Deploy our website so that anyone can see it.</li>
+</ul>
+<p>At this point, you should have a nice and fancy website. Only issue is, it only lives on your computer right now. You want other people to access it just like any other website, and for that, we&rsquo;ll need a host.</p>
+<p>Today, we&rsquo;ll be fully deploying your website so that you can show it off to anyone you like!</p>
+<h2 id="steps">Steps<a hidden class="anchor" aria-hidden="true" href="#steps">#</a></h2>
+<h3 id="push-to-github-repository">Push to GitHub Repository<a hidden class="anchor" aria-hidden="true" href="#push-to-github-repository">#</a></h3>
+<p>What we need to do first is to get your project into a GitHub repository. I&rsquo;m not going to go into too much detail here since it&rsquo;s not super complex, but here are some basic steps:</p>
+<ol>
+<li>Make sure git is installed on your computer</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git --version
+</span></span></code></pre></div><p>If you don&rsquo;t see a version number, head over to <a href="git-scm.com">git-scm.com</a> and download it.</p>
+<ol start="2">
+<li>Now, navigate to your project folder in the terminal and make double-check you&rsquo;re in the correct folder for your project:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cd path/to/your/portfolio-project
+</span></span></code></pre></div><ol start="3">
+<li>Initialize a new Git repository:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git init
+</span></span></code></pre></div><ol start="4">
+<li>Now, let&rsquo;s add and commit our files:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git add .
+</span></span><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#34;Initial commit of portfolio project&#34;</span>
+</span></span></code></pre></div><ol start="5">
+<li>Head on over to <a href="github.com">GitHub</a> and log in (or create an account if needed).</li>
+<li>Click the &ldquo;+&rdquo; button in the top right corner and select &ldquo;New repository&rdquo;</li>
+<li>Name your repository (maybe &ldquo;portfolio&rdquo; or &ldquo;my-portfolio-website&rdquo;)</li>
+<li>Leave it public (unless you have specific reasons to make it private)</li>
+<li>Don&rsquo;t initialize with a README since we already have our project</li>
+<li>Click &ldquo;Create repository&rdquo;</li>
+</ol>
+<p>After creating the repository, GitHub will show commands to connect your local repo. Since we already initialized our local repo, use these commands (don&rsquo;t copy paste from here though, they won&rsquo;t work&mdash;grab them from GitHub):</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git remote add origin https://github.com/YOUR-USERNAME/YOUR-REPO-NAME.git
+</span></span><span style="display:flex;"><span>git branch -M main
+</span></span><span style="display:flex;"><span>git push -u origin main
+</span></span></code></pre></div><p>Refresh your GitHub page and you should see all your portfolio files there!</p>
+<h3 id="deploying-to-vercel">Deploying to Vercel<a hidden class="anchor" aria-hidden="true" href="#deploying-to-vercel">#</a></h3>
+<p>Vercel is a fantastic platform for deploying React apps with pretty much no effort. Let&rsquo;s get into it:</p>
+<ol>
+<li>Go to Vercel and sign up/log in (using your GitHub account makes things easier)</li>
+<li>Once logged in, click &ldquo;Add New&hellip;&rdquo; -&gt; &ldquo;Project&rdquo;</li>
+<li>Vercel will show your GitHub repositories - find and select your portfolio repo</li>
+<li>For a standard React app, Vercel will automatically detect the correct settings</li>
+<li>Under &ldquo;Project Name&rdquo; you can keep the default or choose something memorable</li>
+<li>Leave the &ldquo;Framework Preset&rdquo; as &ldquo;Vite&rdquo;</li>
+<li>Click &ldquo;Deploy&rdquo;</li>
+<li>After a few seconds, you should be greeted with a page like this:
+<img alt="it&rsquo;s deployed" loading="lazy" src="/posts/week3/image.png"></li>
+<li>Click on that image to access your link. Here&rsquo;s mine!: <a href="https://drguzi.vercel.app/">https://drguzi.vercel.app/</a></li>
+</ol>
+<p>That&rsquo;s it! You can give this link to people if you&rsquo;d like and they&rsquo;ll be able to see your entire portfolio. The best part is, whenever you push to your GitHub repository, Vercel will automatically detect that push and pull the latest changes to your deployed website, so you don&rsquo;t have to go through anything!</p>
+<h1 id="conclusion">Conclusion<a hidden class="anchor" aria-hidden="true" href="#conclusion">#</a></h1>
+<p>Over the last three weeks, you&rsquo;ve gone from zero to a great little portfolio that you can show off your projects on! Great job!</p>
+<p>There are some more things left to do that are outside of the scope of this tutorial, however:</p>
+<h2 id="taking-your-portfolio-to-the-next-level">Taking Your Portfolio to the Next Level<a hidden class="anchor" aria-hidden="true" href="#taking-your-portfolio-to-the-next-level">#</a></h2>
+<h3 id="1-migrate-to-nextjs-for-better-seo">1. Migrate to Next.js for Better SEO<a hidden class="anchor" aria-hidden="true" href="#1-migrate-to-nextjs-for-better-seo">#</a></h3>
+<p>While our current React setup works beautifully, consider migrating to Next.js to get some serious SEO benefits. Next.js offers server-side rendering and static site generation which means:</p>
+<ul>
+<li>Search engines can better understand and index your content</li>
+<li>Faster initial page loads for visitors</li>
+<li>Built-in image optimization</li>
+<li>Improved performance metrics</li>
+</ul>
+<p>The migration process is surprisingly straightforward since Next.js supports React components, and the SEO boost could help your portfolio get discovered!</p>
+<h3 id="2-add-eye-catching-animations">2. Add Eye-Catching Animations<a hidden class="anchor" aria-hidden="true" href="#2-add-eye-catching-animations">#</a></h3>
+<p>Nothing says &ldquo;skilled developer&rdquo; like tasteful animations! Consider adding:</p>
+<ul>
+<li>Smooth page transitions using Framer Motion</li>
+<li>Scroll-triggered animations with GSAP (GreenSock Animation Platform)</li>
+<li>Interactive hover effects on your project cards</li>
+<li>Subtle background animations that don&rsquo;t distract but delight</li>
+</ul>
+<p>Just a word of caution: with animations, less is often more. Focus on enhancing the user experience rather than distracting from your content.</p>
+<h3 id="3-implement-proper-routing">3. Implement Proper Routing<a hidden class="anchor" aria-hidden="true" href="#3-implement-proper-routing">#</a></h3>
+<p>As your portfolio grows, you might want dedicated pages for detailed project case studies or blog posts. Adding proper routing will make your site feel like a professional web application:</p>
+<ul>
+<li>Use Next.js&rsquo;s built-in file-based routing system</li>
+<li>Or implement React Router for client-side routing</li>
+<li>Create clean, shareable links to specific sections of your portfolio</li>
+<li>Add breadcrumbs for larger, more complex portfolios</li>
+</ul>
+<h3 id="4-continuous-learning">4. Continuous Learning<a hidden class="anchor" aria-hidden="true" href="#4-continuous-learning">#</a></h3>
+<p>Remember that a developer&rsquo;s portfolio is never truly &ldquo;finished&rdquo; - it evolves as you do! Keep adding new projects, refining your skills, and implementing new technologies you learn.</p>
+<h2 id="final-thoughts">Final Thoughts<a hidden class="anchor" aria-hidden="true" href="#final-thoughts">#</a></h2>
+<p>What you&rsquo;ve built over these three weeks is just the beginning. Your portfolio is now both your showcase and your playground - a place to demonstrate what you&rsquo;ve learned and experiment with what you&rsquo;re learning next.</p>
+<p>So go ahead and share your creation with the world! Add the link to your résumé, social media profiles, and coding community accounts. And most importantly - keep building, keep learning, and keep growing as a developer.</p>
+<p>I can&rsquo;t wait to see where you take your portfolio from here! If you&rsquo;re ever looking for inspiration, <a href="https://github.com/emmabostian/developer-portfolios">click here to find a huge number of portfolios to take notes from.</a> Maybe you could upload your own once you&rsquo;re done!</p>
+<p>Thanks for hanging out! God bless.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">CS Club Portfolio</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

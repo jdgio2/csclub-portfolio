@@ -1,7 +1,7 @@
 +++
 date = '2025-04-23T15:57:56-07:00'
 draft = false
-title = 'Week3'
+title = 'Week 3 - Deployment' 
 +++
 
 [Check out the completed GitHub repo for this week](https://github.com/jdgio2/cs-club-portfolio-w2)
